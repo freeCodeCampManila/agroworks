@@ -9,7 +9,7 @@ function loadCsv(file) {
 
   const prices = d3.csvParseRows(rawPrices, (d, i) => ({
     // date: newDate(NOW_DATE - (708 - i) * 1000 * 60 * 60 * 24).toString(),
-    date: NOW_DATE - (708 - i) * 1000 * 60 * 60 * 24,
+    date: NOW_DATE - (706 - i) * 1000 * 60 * 60 * 24,
     open: +d[0],
     high: +d[1],
     low: +d[2],
