@@ -13,21 +13,23 @@
       vertical-align: top;
       border-top: 1px solid #dee2e6;
 
-      .high {
-        background: cyan;
+      .btn {
         border-radius: 4px;
         color: white;
-      }
+        padding: 3px 5px;
+        font-weight: bold;
 
-      .low {
-        background: red;
-        border-radius: 4px;
-        color: white;
-      }
+        &-high {
+          background-color: $primary-color;
+        }
 
-      .same {
-        background: grey;
-        color: white;
+        &-low {
+          background-color: $danger-color;
+        }
+
+        &-same {
+          background-color: #616161;
+        }
       }
     }
 
