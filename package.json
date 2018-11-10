@@ -1,5 +1,5 @@
 {
-  "name": "simple-react-full-stack",
+  "name": "aggroworks",
   "version": "1.0.0",
   "description": "Boilerplate to build a full stack web application using React, Node.js, Express and Webpack.",
   "main": "src/server/index.js",
