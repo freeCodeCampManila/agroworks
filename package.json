@@ -13,11 +13,11 @@
   "author": "freeCodeCamp Manila",
   "license": "MIT",
   "dependencies": {
-    "classnames": "^2.2.6",
     "express": "^4.16.3",
     "normalize.css": "^8.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-feather": "^1.1.4"
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
