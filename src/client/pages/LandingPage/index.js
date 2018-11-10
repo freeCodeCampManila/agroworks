@@ -1,6 +1,5 @@
 import React from 'react';
 import Undraw from '../../../../public/undraw-analytics.svg';
-import '../../styles/main.scss';
 
 const LandingPage = () => (
   <div className="landing-page">
