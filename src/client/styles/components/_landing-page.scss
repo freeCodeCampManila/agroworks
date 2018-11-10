@@ -1,0 +1,84 @@
+.landing-page {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px 0px;
+    background-color: $primary-color;
+    color: $white;
+    padding: 15px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.25em;
+
+    @include bp-small {
+      font-size: 1em;
+    }
+  }
+
+  .header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+    @include bp-small {
+      padding: 30px;
+      display: flex;
+    }
+
+    .title {
+      margin: 0;
+      letter-spacing: 2px;
+
+      @include bp-small {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .hero {
+    padding: 50px 40px;
+
+    @include bp-small {
+      padding: 30px;
+    }
+
+    .description {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .text {
+        max-width: 80%;
+        font-size: 2.5em;
+        line-height: 2.5 * $base-line-height;
+        font-weight: lighter;
+
+        @include bp-small {
+          font-size: 1.75em;
+          text-align: left;
+          line-height: 1.5 * $base-line-height;
+          max-width: 100%;
+          margin-bottom: $base-spacing-unit;
+        }
+
+        span {
+          font-weight: bold;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .o-col img {
+    max-width: 100%;
+
+    @include bp-small {
+      margin-top: 2 * $base-spacing-unit;
+    }
+  }
+}
