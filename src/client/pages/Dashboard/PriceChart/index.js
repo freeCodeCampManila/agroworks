@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Chart from './Chart';
 
 class PriceChart extends Component {
   state = {
@@ -17,7 +18,15 @@ class PriceChart extends Component {
 
   fetchPrices = (commodity) => {
     fetch(`http://localhost:8080/api/prices/${commodity}`).then((res) => {
-      res.json().then((prices) => {
+      res.json().then((rawPrices) => {
+        const prices = rawPrices.map((rawPrice) => {
+          const price = Object.assign(rawPrice, {
+            date: new Date(rawPrice.date)
+          });
+
+          return price;
+        });
+
         this.setState({ prices });
       });
     });
@@ -45,6 +54,8 @@ class PriceChart extends Component {
     return (
       <div className="price-chart">
         {this.renderDropDown()}
+
+        <Chart data={prices} />
       </div>
     );
   }
