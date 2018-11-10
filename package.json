@@ -1,5 +1,5 @@
 {
-  "name": "aggroworks",
+  "name": "agroworks",
   "version": "1.0.0",
   "description": "Boilerplate to build a full stack web application using React, Node.js, Express and Webpack.",
   "main": "src/server/index.js",
@@ -10,10 +10,12 @@
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "Sandeep Raveesh",
-  "license": "ISC",
+  "author": "freeCodeCamp Manila",
+  "license": "MIT",
   "dependencies": {
+    "classnames": "^2.2.6",
     "express": "^4.16.3",
+    "normalize.css": "^8.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
@@ -34,7 +36,9 @@
     "eslint-plugin-react": "^7.7.0",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.10.0",
     "nodemon": "^1.17.3",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "url-loader": "^1.0.1",
     "webpack": "^4.5.0",

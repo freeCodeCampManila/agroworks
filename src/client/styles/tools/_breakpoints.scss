@@ -1,0 +1,11 @@
+/* Breakpoints */
+
+/**
+  * Breakpoint for small screen (mobile/tablet)
+  */
+
+@mixin bp-small {
+  @media (max-width: $bp-small) {
+    @content;
+  }
+}

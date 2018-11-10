@@ -1,0 +1,14 @@
+/* HTML */
+
+/**
+  Default HTML page style
+  */
+
+html {
+  background: $base-background-color;
+  color: $base-text-color;
+  font-family: $base-font-sans-serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  min-height: 100%;
+}
