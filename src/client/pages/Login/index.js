@@ -3,7 +3,7 @@ import { User, Lock } from 'react-feather';
 
 const Login = () => (
   <div className="login-wrapper">
-    <div className="login-wrapper--container">
+    <div className="o-box-container login-wrapper--container">
       <form action="">
         <h1>Welcome</h1>
         <div className="input-field">
