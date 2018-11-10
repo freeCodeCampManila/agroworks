@@ -1,0 +1,35 @@
+/* Display */
+
+/**
+  * Helper classes for controlling display.
+  */
+
+.u-display-none {
+  display: none;
+}
+
+.u-display-block {
+  display: block;
+}
+
+.u-display-inline {
+  display: inline;
+}
+
+.u-display-inline-block {
+  display: inline-block;
+}
+
+/* Completely hide content from view and from screen readers */
+.u-hide {
+  display: none;
+}
+
+/* Hide content from view but accessible to screen readers */
+.u-hide-visually {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}

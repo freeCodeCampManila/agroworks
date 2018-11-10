@@ -1,0 +1,17 @@
+/* Layout */
+
+/**
+  * Simple flebox grid layout.
+  */
+
+.o-row {
+  display: flex;
+
+  @include bp-small {
+    display: block;
+  }
+}
+
+.o-col {
+  flex: 1;
+}
