@@ -61,7 +61,7 @@
         @include bp-small {
           font-size: 1.75em;
           text-align: left;
-          line-height: 2 * $base-line-height;
+          line-height: 1.5 * $base-line-height;
           max-width: 100%;
           margin-bottom: $base-spacing-unit;
         }
