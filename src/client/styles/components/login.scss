@@ -1,0 +1,55 @@
+.login-wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+.login-wrapper--container {
+  max-width: 400px;
+  margin: 10% auto;
+  padding: 50px;
+  text-align: center;
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px 0 #bfbfbf;
+
+  .input-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #efefef;
+  }
+
+  .input-field .fa {
+    width: 15%;
+    color: #333;
+  }
+
+  .input-field input {
+    box-sizing: border-box;
+    width: 85%;
+    padding: 10px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    font-size: inherit;
+  }
+
+  .btn {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    background-color: $primary-color;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: inherit;
+
+    &:hover {
+      background-color: $light-primary-color;
+    }
+  }
+}
