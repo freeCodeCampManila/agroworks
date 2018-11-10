@@ -1,0 +1,36 @@
+.dashboard {
+  display: flex;
+  height: 100%;
+
+  .padded {
+    padding: 20px;
+    &-noright {
+      padding: 20px 0 20px 20px;
+    }
+    &-top {
+      padding-top: 20px;
+    }
+  }
+  .sidebar {
+    background-color: #333;
+    flex-basis: 80px;
+    .fa {
+      color: white;
+      margin: 30px auto;
+      display: block;
+    }
+  }
+  .main {
+    display: flex;
+    width: 100%;
+  }
+  .graph-portfolio {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .graph .portfolio {
+    flex-basis: 50%;
+  }
+}
