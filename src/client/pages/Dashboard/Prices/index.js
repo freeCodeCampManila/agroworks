@@ -6,8 +6,8 @@ const Prices = () => (
       <thead>
         <tr>
           <th>Product</th>
-          <th>Ask</th>
-          <th>Bid</th>
+          <th>Buy</th>
+          <th>Sell</th>
           <th>Low</th>
           <th>High</th>
         </tr>
@@ -44,7 +44,7 @@ const Prices = () => (
             <strong>Wheat</strong>
           </td>
           <td>
-            <div className="btn btn-low">400.574</div>
+            <div className="btn btn-same">400.574</div>
           </td>
           <td>
             <div className="btn btn-same">400.723</div>
