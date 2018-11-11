@@ -1,13 +1,16 @@
-import React from "react";
-import Prices from "./Prices";
-import PriceChart from "./PriceChart";
-import Portfolio from "./Portfolio";
-import { LogOut } from "react-feather";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { LogOut } from 'react-feather';
+import Prices from './Prices';
+import PriceChart from './PriceChart';
+import Portfolio from './Portfolio';
 
 const Dashboard = () => (
   <div className="dashboard">
     <div className="sidebar">
-      <LogOut className="fa" />
+      <Link to="/" title="Logout">
+        <LogOut className="fa" />
+      </Link>
     </div>
     <div className="main">
       <div className="prices padded-noright">

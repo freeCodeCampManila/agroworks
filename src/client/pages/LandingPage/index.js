@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Undraw from '../../../../public/undraw-analytics.svg';
 
 const LandingPage = () => (
@@ -6,9 +7,9 @@ const LandingPage = () => (
     <header className="o-row container header">
       <h1 className="title">agrowork</h1>
       <div>
-        <button type="button" className="btn">
+        <Link to="/login" className="btn">
           Login
-        </button>
+        </Link>
       </div>
     </header>
     <section className="o-row container hero">

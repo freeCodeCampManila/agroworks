@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 
 import LandingPage from '../pages/LandingPage';
+import Login from '../pages/Login';
 import Dashboard from '../pages/Dashboard';
 
 class ScrollToTop extends Component {
@@ -29,6 +30,7 @@ const AppRoute = () => (
     <ScrollToTopFix>
       <Switch>
         <Route exact path="/" component={LandingPage} />
+        <Route exact path="/login" component={Login} />
         <Route exact path="/dashboard" component={Dashboard} />
       </Switch>
     </ScrollToTopFix>
