@@ -26,6 +26,8 @@ app.get('/api/prices/maize', (req, res) => {
   res.json(data.maizePrices);
 });
 
+app.get('/api/portfolio', (req, res) => res.json(data.portfolio));
+
 // Handles any requests that don't match the ones above
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(`${__dirname}`, '..', '..', 'dist/index.html'));

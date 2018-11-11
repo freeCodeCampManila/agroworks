@@ -2,6 +2,8 @@ const path = require('path');
 const fs = require('fs');
 const d3 = require('d3-dsv');
 
+const portfolio = require('./portfolio');
+
 const NOW_DATE = Date.now();
 
 function loadCsv(file) {
@@ -29,7 +31,8 @@ function initDatabase() {
   return {
     ricePrices,
     wheatPrices,
-    maizePrices
+    maizePrices,
+    portfolio
   };
 }
 
